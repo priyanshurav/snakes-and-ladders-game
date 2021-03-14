@@ -98,5 +98,5 @@ This software is licensed under the [MIT License](https://choosealicense.com/lic
 [issues-url]: https://github.com/priyanshurav/snakes-and-ladders-game/issues
 [license-shield]: https://img.shields.io/github/license/priyanshurav/snakes-and-ladders-game.svg?style=for-the-badge
 [license-url]: https://github.com/priyanshurav/snakes-and-ladders-game/blob/master/LICENSE.txt
-[netlify-shield]: https://img.shields.io/netlify/03bb838b-093c-4eeb-bb1d-68df3bbfaae9?logo=netlify&style=for-the-badge
+[netlify-shield]: https://img.shields.io/netlify/3d383dfb-9561-47da-8844-f35b5cfb455f?logo=netlify&style=for-the-badge
 [netlify-deploy-url]: https://app.netlify.com/sites/snakes-and-ladders/deploys
