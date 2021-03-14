@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "removeComments": true,
+    "noEmit": true
+  },
+  "include": [
+    "src/*.ts",
+    "src/assets/*.svg",
+    "src/assets/*.png",
+    "src/assets/*.gif",
+    "src/types/*.ts",
+    "src/*.css",
+    "src/eventHandlers/*.ts"
+  ],
+  "exclude": ["node_modules"]
+}

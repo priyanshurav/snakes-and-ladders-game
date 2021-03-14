@@ -1,0 +1,108 @@
+.game-board {
+  width: calc(var(--board-block-size) * 10);
+  height: calc(var(--board-block-size) * 10);
+  position: relative;
+}
+.board-blocks {
+  display: grid;
+  grid-template-rows: repeat(10, var(--board-block-size));
+  grid-template-columns: repeat(10, var(--board-block-size));
+}
+.tokens,
+.obstacles,
+.board-blocks {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  opacity: 0;
+}
+.light-box {
+  background-color: #d2691e;
+}
+.dark-box {
+  background-color: #8b4513;
+}
+.tokens {
+  z-index: 10;
+}
+.board-block {
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(var(--board-block-size) / 2.4);
+}
+.dice {
+  height: calc(var(--board-block-size) * 1.16);
+  width: calc(var(--board-block-size) * 1.16);
+  padding: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  margin: 0 20px;
+  background-size: contain;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #fff;
+}
+.dice.enabled {
+  cursor: pointer;
+}
+.dice.disabled {
+  cursor: not-allowed;
+}
+.current-player-color {
+  height: calc(var(--board-block-size) * 0.416);
+  width: calc(var(--board-block-size) * 0.416);
+}
+.token {
+  position: absolute;
+  transition: transform var(--token-transition-speed);
+}
+.obstacle {
+  position: absolute;
+  transform-origin: bottom;
+  background-repeat: repeat;
+  background-size: contain;
+  z-index: 5;
+}
+.current-player-color {
+  border-radius: 50%;
+}
+.current-player-name {
+  margin-right: 10px;
+  font-size: calc(var(--board-block-size) * 0.266);
+}
+.game-start-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -90%) scale(0.9);
+  color: #eee;
+  border: 1px solid #fff;
+  background-color: sandybrown;
+  border-radius: 10px;
+  padding: 10px 30px;
+  width: max-content;
+  z-index: 40;
+  font-size: calc(var(--board-block-size) * 0.72);
+  animation: game-start-text-animation var(--game-start-text-show-duration);
+  animation-timing-function: cubic-bezier(1, 0.03, 0, 0.85);
+}
+@keyframes game-start-text-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}

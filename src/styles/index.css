@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  overflow: hidden;
+  background-color: blanchedalmond;
+  --primary-color: #3f51b5;
+  --selected-player-count-underline-animation-speed: 300ms;
+  --token-transition-speed: 0;
+  --board-block-size: 0;
+  --selected-player-count-underline-height: 4px;
+  --game-start-text-show-duration: 0;
+}
+html {
+  font-size: 16px;
+}
+body,
+html {
+  width: 100vw;
+  height: 100vh;
+}
+.button-group {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 46;
+}
+.restart-btn {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.buttons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  padding: 3px 0;
+}
+.credit-btn {
+  cursor: pointer;
+  background-color: transparent;
+  text-decoration: underline;
+  padding-bottom: 3px;
+  border: none;
+  font-size: 1rem;
+}
+.repository-link {
+  font-size: 1rem;
+  color: #000;
+}
+.hide {
+  display: none;
+}

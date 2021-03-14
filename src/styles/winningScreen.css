@@ -1,0 +1,100 @@
+.winning-screen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1.5px solid rgba(0, 0, 0, 0.5);
+  padding: 0 15px 15px 15px;
+  border-radius: 10px;
+  background-color: #fff;
+  z-index: 25;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.winners-and-losers {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 1fr 1fr;
+  gap: 20px 10px;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+}
+.winning-screen-back-drop {
+  position: absolute;
+  min-width: 100vw;
+  min-height: 100vh;
+  max-width: 100%;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.player-position-number {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.game-finished-text {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+  white-space: nowrap;
+  padding: 0 10px;
+}
+.winning-screen-restart-btn {
+  bottom: 0;
+  margin: 20px 0 0 0;
+  padding: 12px 25px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.winning-screen-restart-btn:hover,
+.winning-screen-restart-btn:focus {
+  background-color: #283593;
+}
+.player-status-text,
+.player-name {
+  text-align: center;
+  white-space: nowrap;
+}
+.status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+@media (max-width: 400px) {
+  .winning-screen {
+    width: 100vw;
+  }
+  .game-finished-text {
+    font-size: 9vw;
+  }
+  .winning-screen-token {
+    height: 10vw;
+  }
+  .player-position-number {
+    font-size: 8vw;
+  }
+  .player-name,
+  .player-status-text {
+    font-size: 4vw;
+  }
+  .winning-screen-restart-btn {
+    width: 37vw;
+    height: 13.5vw;
+    font-size: 5vw;
+  }
+}

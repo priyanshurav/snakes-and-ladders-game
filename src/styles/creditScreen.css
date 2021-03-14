@@ -1,0 +1,61 @@
+.credit-screen-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+}
+.credit-screen-close-btn {
+  height: 30px;
+  width: 30px;
+  background-origin: content-box;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.credit-screen {
+  position: relative;
+  height: 200px;
+  width: 400px;
+  background-color: #fff;
+  box-shadow: 1px 1px 20px 0 #0005;
+  border-radius: 10px;
+  padding: 0 10px;
+  transition: opacity 200ms;
+}
+.credit-screen *,
+.credit-screen,
+.credit-screen-container {
+  z-index: 50;
+}
+.credit-screen h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+.credit-links a {
+  color: #000;
+}
+.credit-links > * {
+  margin: 10px 0;
+}
+.credit-links {
+  display: grid;
+}
+@media (max-width: 400px) {
+  .credit-screen h1 {
+    font-size: 8vw;
+  }
+}

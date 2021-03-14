@@ -1,0 +1,174 @@
+.ask-player-count-screen {
+  --legend-height: 25px;
+  --computer-color: #00008b;
+  --human-color: #1e90ff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  height: 300px;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, 0.33);
+  grid-template-rows: 35px var(--legend-height) 1fr 55px;
+  z-index: 45;
+  display: grid;
+}
+.player-count-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.player-count {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+.player-count:not(.selected) {
+  cursor: pointer;
+}
+.player-count:not(.selected):hover::after,
+.player-count:not(.selected):focus::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: var(--selected-player-count-underline-height);
+  width: 100%;
+  animation: fade var(--selected-player-count-underline-animation-speed)
+    forwards;
+}
+.selected-player-count-underline {
+  content: '';
+  display: block;
+  height: var(--selected-player-count-underline-height);
+  width: calc(100% / 3);
+  background-color: var(--primary-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: transform var(--selected-player-count-underline-animation-speed);
+}
+.player-inputs-group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+  height: 80%;
+}
+
+.player-inputs-group-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.player-inputs-group > * {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.player-name-input::placeholder,
+.player-name-input {
+  font-size: 1rem;
+}
+.player-name-input {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.is-computer-btn {
+  background-color: var(--human-color);
+  border: none;
+  outline: none;
+  background-repeat: no-repeat;
+  width: 30px;
+  background-origin: content-box;
+  background-size: contain;
+  cursor: pointer;
+  padding: 3px;
+  background-position: center center;
+  border-radius: 5px;
+}
+.is-computer-btn.disabled {
+  cursor: not-allowed;
+}
+.start-btn {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  font-size: 1rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 80%;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  border: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+.start-btn:hover,
+.start-btn:focus {
+  background-color: #283593;
+}
+.is-computer-btn.checked {
+  background-color: var(--computer-color);
+}
+.is-computer-btn.focused,
+.is-computer-btn:not(.disabled):hover {
+  outline: 2px solid #000;
+}
+.start-btn-container {
+  position: relative;
+}
+.players-legend {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0 5px;
+}
+.legend-text {
+  font-size: calc(var(--legend-height) * 0.6);
+}
+.human.legend-text {
+  margin-right: 8px;
+}
+.legend-color {
+  height: calc(var(--legend-height) * 0.7);
+  width: calc(var(--legend-height) * 0.7);
+  margin: 0 5px;
+  border-radius: 50%;
+}
+.human.legend-color {
+  background-color: var(--human-color);
+}
+.computer.legend-color {
+  background-color: var(--computer-color);
+}
+input[type='checkbox'] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  z-index: -7;
+}
+@keyframes fade {
+  to {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+@media (max-width: 400px) {
+  .ask-player-count-screen {
+    width: 100vw;
+  }
+  .player-name-input,
+  .player-name-input::placeholder {
+    font-size: 4vw;
+  }
+}

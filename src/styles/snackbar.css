@@ -1,0 +1,50 @@
+.snackbar-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  height: max-content;
+  width: 100vw;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.snackbar {
+  background-color: #2196f3;
+  color: #ffffff;
+  padding: 10px 15px;
+  display: flex;
+  z-index: 49;
+  width: max-content;
+  max-width: 97vw;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  transform-origin: center top;
+  animation: snackbar-animation 300ms forwards;
+}
+@keyframes snackbar-animation {
+  from {
+    transform: scale(0.1) translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) translateY(5px);
+    opacity: 1;
+  }
+}
+.snackbar-close-btn {
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  border: none;
+  margin: 0 0 0 10px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 300ms;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.snackbar-close-btn:hover,
+.snackbar-close-btn:focus {
+  background-color: #1976d2;
+}
