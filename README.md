@@ -83,7 +83,7 @@ Contributions are what make the open source community such an amazing place to b
 
 ## License
 
-This software is licensed under the [MIT License](https://choosealicense.com/licenses/mit/). See the [LICENSE](https://github.com/pr357/snakes-and-ladders-game/blob/main/LICENSE) for more info
+This software is licensed under the [MIT License](https://choosealicense.com/licenses/mit/). See the [LICENSE](https://github.com/priyanshurav/snakes-and-ladders-game/blob/main/LICENSE) for more info
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
@@ -97,6 +97,6 @@ This software is licensed under the [MIT License](https://choosealicense.com/lic
 [issues-shield]: https://img.shields.io/github/issues/priyanshurav/snakes-and-ladders-game.svg?style=for-the-badge
 [issues-url]: https://github.com/priyanshurav/snakes-and-ladders-game/issues
 [license-shield]: https://img.shields.io/github/license/priyanshurav/snakes-and-ladders-game.svg?style=for-the-badge
-[license-url]: https://github.com/priyanshurav/snakes-and-ladders-game/blob/master/LICENSE.txt
+[license-url]: https://github.com/priyanshurav/snakes-and-ladders-game/blob/main/LICENSE
 [netlify-shield]: https://img.shields.io/netlify/3d383dfb-9561-47da-8844-f35b5cfb455f?logo=netlify&style=for-the-badge
 [netlify-deploy-url]: https://app.netlify.com/sites/snakes-and-ladders/deploys
