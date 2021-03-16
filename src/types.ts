@@ -49,7 +49,7 @@ export interface ITokenSize {
   height: number;
   width: number;
 }
-export interface IObstacle {
+export interface ISnakeOrLadder {
   type: 'snake' | 'ladder';
   startBlock: number;
   endBlock: number;

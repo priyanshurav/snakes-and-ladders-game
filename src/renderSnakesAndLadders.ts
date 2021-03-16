@@ -1,23 +1,23 @@
 import { gameStatus } from './gameStatus';
-import ladder from './assets/obstacles/ladder.png';
-import snake from './assets/obstacles/snake.png';
-import { chunk, intersection } from 'lodash';
+import ladder from './assets/snakeOrLadder/ladder.png';
+import snake from './assets/snakeOrLadder/snake.png';
+import { capitalize, chunk, intersection } from 'lodash';
 
 export default (): void => {
-  const obstacleContainer = document.getElementById('obstacles');
+  const snakesOrLaddersContainer = document.getElementById('snakes-or-ladders');
 
   const boardBlocks = Array.from(
     document.querySelectorAll<HTMLDivElement>('.board-block')
   );
 
-  if (!obstacleContainer || !boardBlocks) return;
+  if (!snakesOrLaddersContainer || !boardBlocks) return;
 
-  obstacleContainer.innerHTML = '';
+  snakesOrLaddersContainer.innerHTML = '';
 
-  const { obstaclesTemplate } = gameStatus;
+  const { snakesAndLaddersTemplate } = gameStatus;
 
-  for (let i = 0; i < obstaclesTemplate.length; i++) {
-    const { type, startBlock, endBlock } = obstaclesTemplate[i];
+  for (let i = 0; i < snakesAndLaddersTemplate.length; i++) {
+    const { type, startBlock, endBlock } = snakesAndLaddersTemplate[i];
     const imgEl = document.createElement('img');
 
     const startBlockEl = boardBlocks.filter(
@@ -81,9 +81,9 @@ export default (): void => {
       (tHypot * tHypot + tPerpendicular * tPerpendicular - tBase * tBase) /
         (2 * tHypot * tPerpendicular)
     );
-    imgEl.alt = 'Game obstacle';
+    imgEl.alt = capitalize(type);
     imgEl.src = type === 'ladder' ? ladder : snake;
-    imgEl.classList.add('obstacle');
+    imgEl.classList.add('snake-or-ladder');
     imgEl.style.bottom = bottom + 'px';
     imgEl.style.left = left + 'px';
     imgEl.height = tHypot + gameStatus.boardBlockSize / 4;
@@ -92,6 +92,6 @@ export default (): void => {
       rotationAngle * (isOpposite ? -1 : 1)
     }rad) ${isOpposite ? 'scaleX(-1)' : ''}`;
 
-    obstacleContainer.appendChild(imgEl);
+    snakesOrLaddersContainer.appendChild(imgEl);
   }
 };

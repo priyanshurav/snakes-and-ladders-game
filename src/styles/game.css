@@ -9,7 +9,7 @@
   grid-template-columns: repeat(10, var(--board-block-size));
 }
 .tokens,
-.obstacles,
+.snakes-or-ladders,
 .board-blocks {
   position: absolute;
   width: 100%;
@@ -67,7 +67,7 @@
   position: absolute;
   transition: transform var(--token-transition-speed);
 }
-.obstacle {
+.snake-or-ladder {
   position: absolute;
   transform-origin: bottom;
   background-repeat: repeat;

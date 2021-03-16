@@ -1,8 +1,10 @@
-import { OBSTACLE_COUNT } from './constants';
+import { SNAKES_AND_LADDERS_COUNT } from './constants';
 import createSnakesAndLaddersTemplate from './createSnakesAndLaddersTemplate';
 import { gameStatus } from './gameStatus';
 
-test(`creates ${OBSTACLE_COUNT} obstacles template`, () => {
+test(`creates ${SNAKES_AND_LADDERS_COUNT} snakes and ladders template`, () => {
   createSnakesAndLaddersTemplate();
-  expect(gameStatus.obstaclesTemplate).toHaveLength(OBSTACLE_COUNT);
+  expect(gameStatus.snakesAndLaddersTemplate).toHaveLength(
+    SNAKES_AND_LADDERS_COUNT
+  );
 });

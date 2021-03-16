@@ -7,7 +7,7 @@ import diceFace5 from './assets/dice/5.svg';
 import diceFace6 from './assets/dice/6.svg';
 import moveToken from './moveToken';
 import changeTurn from './changeTurn';
-import jumpTokenFromObstacle from './jumpTokenFromObstacle';
+import jumpTokenFromSnakeOrLadder from './jumpTokenFromSnakeOrLadder';
 import showSnackbar from './showSnackbar';
 import setAccurateTimeout from 'set-accurate-timeout';
 
@@ -52,7 +52,7 @@ export default async (diceEl: HTMLDivElement): Promise<void> => {
       gameStatus.currentPlayer.position + randomNumber
     );
 
-  await jumpTokenFromObstacle();
+  await jumpTokenFromSnakeOrLadder();
 
   const isTimerRequired =
     gameStatus.winnersAndLosers.length === gameStatus.allPlayers.length - 1 ||

@@ -2,7 +2,7 @@ import { cloneDeep } from 'lodash';
 import { INITIAL_BOARD_BLOCK_SIZE, MAX_PLAYER_COUNT } from './constants';
 import {
   IBoardGridItem,
-  IObstacle,
+  ISnakeOrLadder,
   IPlayer,
   IPlayerXDirections,
 } from './types';
@@ -15,7 +15,7 @@ export default class CurrentGameStatus {
   private _isDiceDisabled = true;
   private _winnersAndLosers: IPlayer[] = [];
 
-  obstaclesTemplate: IObstacle[] = [];
+  snakesAndLaddersTemplate: ISnakeOrLadder[] = [];
   boardTemplate: IBoardGridItem[] = [];
   isCheatDisabled = false;
   isFirstStart = true;
