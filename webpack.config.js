@@ -82,16 +82,9 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         {
-          from: path.resolve(__dirname, 'public', 'robots.txt'),
-          to: 'robots.txt',
-        },
-        {
-          from: path.resolve(__dirname, 'public', 'manifest.json'),
-          to: 'manifest.json',
-        },
-        {
-          from: path.resolve(__dirname, 'public', 'service-worker.js'),
-          to: 'service-worker.js',
+          from: './public/*',
+          to: '.',
+          flatten: true,
         },
         {
           flatten: true,
