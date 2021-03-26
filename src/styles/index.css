@@ -43,18 +43,28 @@ html {
   top: 0;
   left: 0;
   display: flex;
-  padding: 3px 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 4px 2px;
 }
 .buttons > * {
   margin: 0 3px;
 }
 .credit-btn {
+  position: absolute;
   cursor: pointer;
-  background-color: transparent;
-  text-decoration: underline;
-  padding-bottom: 3px;
   border: none;
-  font-size: 1rem;
+  font-size: 0.95rem;
+  background-color: #222;
+  color: #fff;
+  margin: 6px 5px;
+  padding: 5px 10px;
+  bottom: 0;
+  right: 0;
+  transition: background-color 200ms;
+}
+.credit-btn:hover {
+  background-color: #414141;
 }
 .hide {
   display: none;
