@@ -45,6 +45,9 @@ html {
   display: flex;
   padding: 3px 0;
 }
+.buttons > * {
+  margin: 0 3px;
+}
 .credit-btn {
   cursor: pointer;
   background-color: transparent;
@@ -52,10 +55,6 @@ html {
   padding-bottom: 3px;
   border: none;
   font-size: 1rem;
-}
-.repository-link {
-  font-size: 1rem;
-  color: #000;
 }
 .hide {
   display: none;
