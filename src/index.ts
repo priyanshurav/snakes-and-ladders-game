@@ -1,12 +1,7 @@
+import './styles/index.scss';
 import initGame from './initGame';
 import startGame from './startGame';
 import askPlayerCount from './askPlayerCount';
-import './styles/winningScreen.css';
-import './styles/askPlayerCountScreen.css';
-import './styles/creditScreen.css';
-import './styles/game.css';
-import './styles/snackbar.css';
-import './styles/index.css';
 import { closeSnackBar } from './showSnackbar';
 
 export default async function main(): Promise<void> {

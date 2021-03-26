@@ -42,12 +42,16 @@ module.exports = {
         exclude: '/node_modules/',
       },
       {
-        test: /\.css$/,
+        test: /\.s(c|a)ss$/,
         use: [
           isDev ? 'style-loader' : MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
             options: { importLoaders: 1 },
+          },
+          {
+            loader: 'sass-loader',
+            options: { sourceMap: isDev },
           },
         ],
       },
