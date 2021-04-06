@@ -1,6 +1,6 @@
 import { TokenColors } from './types';
 
-export const INITIAL_BOARD_BLOCK_SIZE = 60;
+export const INITIAL_BOARD_BLOCK_SIZE = 58;
 export const TOKEN_MOVE_TRANSITION_SPEED = 500;
 export const TOKEN_JUMP_TRANSITION_SPEED = 1500;
 export const TOKEN_TRANSITION_SPEED_CSS_VARIABLE = '--token-transition-speed';
