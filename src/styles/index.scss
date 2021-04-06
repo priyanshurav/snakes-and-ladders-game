@@ -49,28 +49,26 @@ html {
   top: 0;
   left: 0;
   display: flex;
-  width: 100vw;
-  height: 100vh;
   padding: 4px 2px;
 }
 .buttons > * {
   margin: 0 3px;
 }
 .credit-btn {
-  position: absolute;
   cursor: pointer;
-  border: none;
-  font-size: 0.95rem;
-  background-color: #222;
-  color: #fff;
-  margin: 6px 5px;
-  padding: 5px 10px;
-  bottom: 0;
-  right: 0;
-  transition: background-color 200ms;
+  font-size: 11px;
+  font-weight: 600;
+  background-color: #eff3f6;
+  color: #24292e;
+  height: 20px;
+  padding: 2px 5px;
+  user-select: none;
+  border: 1px solid #cfd3d6;
 }
-.credit-btn:hover {
-  background-color: #414141;
+.credit-btn:hover,
+.credit-btn:focus {
+  background-color: #e9ebef;
+  border-color: #caccd0;
 }
 .hide {
   display: none;
