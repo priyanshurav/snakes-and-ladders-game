@@ -55,7 +55,8 @@
 
 ## About The Project
 
-[![Screenshot](images/screenshot.jpeg)](https://snakes-and-ladders.netlify.app/)
+[![Screenshot 1](images/screenshot-1.jpeg)](https://snakes-and-ladders.netlify.app/)
+[![Screenshot 2](images/screenshot-2.jpeg)](https://snakes-and-ladders.netlify.app/)
 
 This is a simple and easy to play Snakes and Ladders game that you can play alone or with other people. It is completely free to play and open-source.
 
