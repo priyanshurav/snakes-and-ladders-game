@@ -62,6 +62,7 @@
 .current-player-color {
   height: calc(var(--board-block-size) * 0.416);
   width: calc(var(--board-block-size) * 0.416);
+  border: 1px solid black;
 }
 .token {
   position: absolute;
