@@ -21,6 +21,10 @@ Guidelines are enforced using [ESLint](https://www.npmjs.com/package/eslint):
 $ npm run lint
 ```
 
+## Submitting code
+
+Any code change should be submitted as a pull request, **based on `dev` branch**. The description should explain what the code does.
+
 ## To contribute to this project
 
 - First fork this repo on GitHub
@@ -28,7 +32,7 @@ $ npm run lint
 - Change your current directory to your cloned repo
 - Install the necessary npm dependencies by running `npm install`
 - Start the local dev server by running `npm start`
-- Create a new branch that matches the change that you are doing
+- Create a new branch from the `dev` branch that matches the change that you are doing
 - Make your changes
 - Test and lint your changes
 - Commit your changes
