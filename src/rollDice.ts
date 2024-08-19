@@ -44,7 +44,7 @@ export default async (diceEl: HTMLDivElement): Promise<void> => {
     isSmallerNumberRequiredToWin && !gameStatus.currentPlayer.isComputer;
 
   if (isSnackbarNeeded)
-    showSnackbar(`You need a number less than ${randomNumber} to win`);
+    showSnackbar(`You need a number less than ${randomNumber} to move`);
 
   if (!isSnackbarNeeded)
     await moveToken(
