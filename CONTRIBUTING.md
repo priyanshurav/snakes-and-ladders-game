@@ -23,7 +23,7 @@ $ npm run lint
 
 ## Submitting code
 
-Any code change should be submitted as a pull request, **based on `dev` branch**. The description should explain what the code does.
+Any code change should be submitted as a pull request, **based on `dev` branch**. The description should explain what the code does. The `main` branch contains the code running in production.
 
 ## To contribute to this project
 
