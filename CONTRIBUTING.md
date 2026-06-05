@@ -32,7 +32,7 @@ Any code change should be submitted as a pull request, **based on `dev` branch**
 - Change your current directory to your cloned repo
 - Install the necessary npm dependencies by running `npm install`
 - Start the local dev server by running `npm start`
-- Create a new branch from the `dev` branch that matches the change that you are doing
+- Create a new branch from the `main` branch that matches the change that you are doing
 - Make your changes
 - Test and lint your changes
 - Commit your changes
