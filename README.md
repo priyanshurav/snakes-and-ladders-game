@@ -12,7 +12,6 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![Netlify Badge][netlify-shield]][netlify-deploy-url]
 
 <!-- PROJECT LOGO -->
 <br />
@@ -27,7 +26,7 @@
     A Snakes and Ladders game
     <br />
     <br />
-    <a href="https://snakes-and-ladders.netlify.app/">View Demo</a>
+    <a href="https://snakes-and-ladders-game.pages.dev/">View Demo</a>
     ·
     <a href="https://github.com/priyanshurav/snakes-and-ladders-game/issues">Report Bug</a>
     ·
@@ -55,8 +54,8 @@
 
 ## About The Project
 
-[![Screenshot 1](images/screenshot-1.jpeg)](https://snakes-and-ladders.netlify.app/)
-[![Screenshot 2](images/screenshot-2.jpeg)](https://snakes-and-ladders.netlify.app/)
+[![Screenshot 1](images/screenshot-1.jpeg)](https://snakes-and-ladders-game.pages.dev/)
+[![Screenshot 2](images/screenshot-2.jpeg)](https://snakes-and-ladders-game.pages.dev/)
 
 This is a simple and easy to play Snakes and Ladders game that you can play alone or with other people. It is completely free to play and open-source.
 
@@ -99,5 +98,3 @@ This software is licensed under the [MIT License](https://choosealicense.com/lic
 [issues-url]: https://github.com/priyanshurav/snakes-and-ladders-game/issues
 [license-shield]: https://img.shields.io/github/license/priyanshurav/snakes-and-ladders-game.svg?style=for-the-badge
 [license-url]: https://github.com/priyanshurav/snakes-and-ladders-game/blob/main/LICENSE
-[netlify-shield]: https://img.shields.io/netlify/3d383dfb-9561-47da-8844-f35b5cfb455f?logo=netlify&style=for-the-badge
-[netlify-deploy-url]: https://app.netlify.com/sites/snakes-and-ladders/deploys

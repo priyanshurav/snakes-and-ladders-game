@@ -2,7 +2,7 @@
   "name": "Snakes and Ladders",
   "short_name": "Snakes and Ladders",
   "description": "A snakes and ladders game.",
-  "start_url": "https://snakes-and-ladders.netlify.app/",
+  "start_url": "https://snakes-and-ladders-game.pages.dev/",
   "icons": [
     {
       "src": "icons/manifest-icon-192.png",
